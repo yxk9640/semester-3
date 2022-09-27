@@ -5,7 +5,8 @@ var tries = 0; /* # of tries to clean the wall */
 var started = false; /* false means ready to kick the ball */
 var ball, court, paddle, brick, msg;
 var court_height, court_width, paddle_left;
-var animated, paddle_position;
+var animated, paddle_position, updateMsg = 0,
+    levelDiff;
 
 var bricks = new Array(4); // rows of bricks
 var colors = ["red", "blue", "yellow", "green"];
@@ -77,18 +78,33 @@ function hits_a_brick(x, y, i, j) {
 function startGame() {
     if (!started) {
         started = true;
-        dy = -1;
-        dx = 1;
-        console.log(id(bricks[0][0]) + " Brick");
-
+        levelDiff = (document.getElementById("level").value == 1) ?
+            0.5 : (document.getElementById("level").value == 2) ?
+            1 : (document.getElementById("level").value == 3) ?
+            1.5 : (document.getElementById("level").value == 4) ?
+            2 : alert("select level");
+        dy = -levelDiff;
+        dx = levelDiff;
+        console.log(msg.innerText + " :score");
+        console.log((bricks[3][19].style.visibility == "hidden") ? ": bricks start" : "not");
         animated = setInterval(move2, 1);
     }
+
+
 }
 
 function resetGame() {
-    started = false;
+    //tries=0, score=0, ball on paddle, bricks reset, messages=0, 
     clearInterval(animated);
-    initialize();
+    tries = 0;
+    updateMsg = 0;
+    id("tries").innerText = tries;
+    id("messages").innerText = updateMsg;
+    for (i = 0; i < 4; i++) {
+        for (j = 0; j < 20; j++) {
+            bricks[i][j].style.visibility = "visible";
+        }
+    }
     readyToKick();
 }
 
@@ -100,9 +116,19 @@ function collision() {
         dy = -dy;
         console.log(y);
     }
-    // if (Math.abs(pixels(ball.style.top)) < 21) {
-    //     dy = -dy;
-    // }
+    if (Math.abs(pixels(ball.style.top)) < 1) { //bottom
+        //brick=same, ball on paddle, tries++ score=0 msgs++
+        clearInterval(animated);
+        started = false;
+        readyToKick();
+        tries++;
+        // score = 0;
+        id("tries").innerText = tries;
+        // id("score").innerText = score;
+        id("messages").innerText = updateMsg;
+
+        console.log((bricks[3][19].style.visibility == "hidden") ? ": bricks bottom" : "not");
+    }
     if (Math.abs(pixels(ball.style.left)) >= court_width || Math.abs(pixels(ball.style.left)) <= 1) {
         dx = -dx;
     }
@@ -111,12 +137,44 @@ function collision() {
 
     }
 
+    for (let l = 0; l < bricks.length; l++) {
+        for (let k = 0; k < 20; k++) {
+            if (hits_a_brick(x, y, l, k) && bricks[l][k].style.visibility != "hidden") {
+                bricks[l][k].style.visibility = "hidden";
+                dy = -dy;
+                updateMsg++;
+                id("messages").innerText = updateMsg;
+            }
+        }
+    }
+
+
+
 }
 
 function move2() {
     collision();
+
     y += dy;
     x += dx;
     ball.style.top = y + "px";
     ball.style.left = x + "px";
+    if (updateMsg == 80) {
+        score++;
+        updateMsg = 0;
+        id("score").innerText = score;
+        // id("score").innerText = score;
+        for (i = 0; i < 4; i++) {
+            for (j = 0; j < 20; j++) {
+                bricks[i][j].style.visibility = "visible";
+            }
+        }
+        clearInterval(animated);
+        readyToKick();
+    }
+
 }
+
+
+// ----
+// check if pixel can retrive brick indexes?
