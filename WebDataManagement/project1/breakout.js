@@ -5,7 +5,7 @@ var tries = 0; /* # of tries to clean the wall */
 var started = false; /* false means ready to kick the ball */
 var ball, court, paddle, brick, msg;
 var court_height, court_width, paddle_left;
-var animated, paddle_position, updateMsg = 0,
+var animated, paddle_position, brickCount = 0,
     levelDiff;
 
 var bricks = new Array(4); // rows of bricks
@@ -83,10 +83,14 @@ function startGame() {
             1 : (document.getElementById("level").value == 3) ?
             1.5 : (document.getElementById("level").value == 4) ?
             2 : alert("select level");
+        //calculate angle random (-1,1) --> (Math.random() * 2 - 1);
+        // (random * (max - min + 1 ) +min) min=0;
+
+        var angle = (Math.PI / 4) * (Math.random() * 2 - 1);
+        // console.log(angle * 180 / Math.PI + "angle");
         dy = -levelDiff;
-        dx = levelDiff;
-        console.log(msg.innerText + " :score");
-        console.log((bricks[3][19].style.visibility == "hidden") ? ": bricks start" : "not");
+        dx = levelDiff * angle;
+        // console.log(angle + " :angle1");
         animated = setInterval(move2, 1);
     }
 
@@ -97,41 +101,39 @@ function resetGame() {
     //tries=0, score=0, ball on paddle, bricks reset, messages=0, 
     clearInterval(animated);
     tries = 0;
-    updateMsg = 0;
+    brickCount = 0;
+    score = 0;
     id("tries").innerText = tries;
-    id("messages").innerText = updateMsg;
+    id("score").innerText = score;
     for (i = 0; i < 4; i++) {
         for (j = 0; j < 20; j++) {
             bricks[i][j].style.visibility = "visible";
         }
     }
+    started = false;
     readyToKick();
+
 }
 
 
 // ---- Extra Self functions -----
 
 function collision() {
-    if (Math.abs(pixels(ball.style.top)) >= court_height - 10) {
+    if (Math.abs(pixels(ball.style.top)) >= court_height - ball.width) {
         dy = -dy;
-        console.log(y);
     }
     if (Math.abs(pixels(ball.style.top)) < 1) { //bottom
-        //brick=same, ball on paddle, tries++ score=0 msgs++
+        //brick=same, ball on paddle, tries++ score=0 
         clearInterval(animated);
         started = false;
         readyToKick();
         tries++;
-        // score = 0;
         id("tries").innerText = tries;
-        // id("score").innerText = score;
-        id("messages").innerText = updateMsg;
-
-        console.log((bricks[3][19].style.visibility == "hidden") ? ": bricks bottom" : "not");
     }
-    if (Math.abs(pixels(ball.style.left)) >= court_width || Math.abs(pixels(ball.style.left)) <= 1) {
+    if (Math.abs(pixels(ball.style.left)) >= court_width - ball.width || Math.abs(pixels(ball.style.left)) <= 1) {
         dx = -dx;
     }
+    //paddle
     if ((Math.abs(pixels(ball.style.left)) >= paddle_position && Math.abs(pixels(ball.style.left)) <= paddle_position + pixels("97.183px")) && Math.abs(pixels(ball.style.top)) == pixels(paddle.style.top)) {
         dy = -dy;
 
@@ -142,39 +144,32 @@ function collision() {
             if (hits_a_brick(x, y, l, k) && bricks[l][k].style.visibility != "hidden") {
                 bricks[l][k].style.visibility = "hidden";
                 dy = -dy;
-                updateMsg++;
-                id("messages").innerText = updateMsg;
+                brickCount++;
             }
         }
     }
-
-
-
 }
 
 function move2() {
-    collision();
-
-    y += dy;
-    x += dx;
-    ball.style.top = y + "px";
-    ball.style.left = x + "px";
-    if (updateMsg == 80) {
+    if (brickCount == 80) {
         score++;
-        updateMsg = 0;
+        brickCount = 0;
+        tries = 0;
         id("score").innerText = score;
-        // id("score").innerText = score;
+        id("tries").innerText = tries;
         for (i = 0; i < 4; i++) {
             for (j = 0; j < 20; j++) {
                 bricks[i][j].style.visibility = "visible";
             }
         }
         clearInterval(animated);
+        started = false;
         readyToKick();
+    } else {
+        collision();
+        y += dy;
+        x += dx;
+        ball.style.top = y + "px";
+        ball.style.left = x + "px";
     }
-
 }
-
-
-// ----
-// check if pixel can retrive brick indexes?
