@@ -5,6 +5,7 @@ var tries = 0; /* # of tries to clean the wall */
 var started = false; /* false means ready to kick the ball */
 var ball, court, paddle, brick, msg;
 var court_height, court_width, paddle_left;
+var animated, paddle_position;
 
 var bricks = new Array(4); // rows of bricks
 var colors = ["red", "blue", "yellow", "green"];
@@ -34,8 +35,10 @@ function movePaddle(e) {
         ((ox > court_width - paddle.width) ?
             court_width - paddle.width + "px" :
             ox + "px");
-    if (!started)
+    paddle_position = Math.abs(pixels(paddle.style.left));
+    if (!started) {
         readyToKick();
+    }
 }
 
 function initialize() {
@@ -72,50 +75,48 @@ function hits_a_brick(x, y, i, j) {
 
 
 function startGame() {
-
-    setTimeout(move(), 1000);
-
-    // yreverse();
-
-
-}
-
-
-function move() {
-    let i = 0,
-        sum = 10;
-
-    while (true) {
-        ball.style.left = sum + "px";
-        ball.style.top = -sum + "px";
-        sum += 0.1;
-        console.log(ball.style.left + " Left position of ball");
-        console.log(ball.style.top + " top position of ball");
-
+    if (!started) {
         started = true;
-        i++;
-        //not required
-        console.log(i + " : i");
+        dy = -1;
+        dx = 1;
+        console.log(id(bricks[0][0]) + " Brick");
 
-
-        if (i > court_height) {
-            ball.style.left = 2 + "px";
-            ball.style.top = 2 + "px";
-            break;
-        }
+        animated = setInterval(move2, 1);
     }
-
-
-
 }
-
-
-
 
 function resetGame() {
     started = false;
+    clearInterval(animated);
     initialize();
     readyToKick();
-    console.log("this is to reset the game");
+}
 
+
+// ---- Extra Self functions -----
+
+function collision() {
+    if (Math.abs(pixels(ball.style.top)) >= court_height - 10) {
+        dy = -dy;
+        console.log(y);
+    }
+    // if (Math.abs(pixels(ball.style.top)) < 21) {
+    //     dy = -dy;
+    // }
+    if (Math.abs(pixels(ball.style.left)) >= court_width || Math.abs(pixels(ball.style.left)) <= 1) {
+        dx = -dx;
+    }
+    if ((Math.abs(pixels(ball.style.left)) >= paddle_position && Math.abs(pixels(ball.style.left)) <= paddle_position + pixels("97.183px")) && Math.abs(pixels(ball.style.top)) == pixels(paddle.style.top)) {
+        dy = -dy;
+
+    }
+
+}
+
+function move2() {
+    collision();
+    y += dy;
+    x += dx;
+    ball.style.top = y + "px";
+    ball.style.left = x + "px";
 }
