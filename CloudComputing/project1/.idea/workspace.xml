@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6853613b-cfa6-4706-906b-83f9b1672b2e" name="Changes" comment="" />
+    <list default="true" id="6853613b-cfa6-4706-906b-83f9b1672b2e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Simple.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project1.tgz" beforeDir="false" afterPath="$PROJECT_DIR$/../project1.tgz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WebDataManagement/Scratch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WebDataManagement/project1.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebDataManagement/project1.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WebDataManagement/project1/breakout.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebDataManagement/project1/breakout.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,8 +61,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -57,10 +74,17 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Netflix">
+  <component name="RunManager" selected="Java Scratch.ListNode">
     <configuration name="Netflix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Netflix" />
       <module name="cse6332-P1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListNode" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ListNode" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/ListNode.java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -91,11 +115,13 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Maven.cse6332-P1 [install]" />
       <item itemvalue="Application.Netflix" />
+      <item itemvalue="Java Scratch.ListNode" />
+      <item itemvalue="Maven.cse6332-P1 [install]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Java Scratch.ListNode" />
         <item itemvalue="Application.Netflix" />
       </list>
     </recent_temporary>
