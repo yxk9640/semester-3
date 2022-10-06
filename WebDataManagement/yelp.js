@@ -22,12 +22,14 @@ function findRestaurants() {
             var json = JSON.parse(this.responseText);
             var str = JSON.stringify(json, undefined, 2);
 
+            var list = id("output").appendChild(id("ool"));
+            list.innerHTML = "";
 
             //get JSON data
             if (city && searchType) {
                 for (var i = 0; i <= id("level").value; i++) {
                     let t = i + 1;
-                    id("output").appendChild(id("ool")).innerHTML += "<pre>" +
+                    list.innerHTML += "<pre>" +
                         "<li>" +
                         //1 Image
                         '<img src="' + json.businesses[i].image_url + '" width="100" height="100">' + "\n" +
@@ -48,12 +50,14 @@ function findRestaurants() {
                         "</li>" +
                         "<hr>" +
                         " </pre > ";
+
+                    console.log(json.businesses.length);
                 }
 
             } else {
                 alert("Enter Search Terms and city");
             }
-            //clear iframe
+
 
 
 
