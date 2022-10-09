@@ -1,3 +1,4 @@
+//Yogesh Kalapala. yxk9640
 var dx, dy; /* displacement at every dt */
 var x, y; /* ball location */
 var score = 0; /* # of walls you have cleaned */
@@ -5,7 +6,8 @@ var tries = 0; /* # of tries to clean the wall */
 var started = false; /* false means ready to kick the ball */
 var ball, court, paddle, brick, msg;
 var court_height, court_width, paddle_left;
-var animated, paddle_position;
+var animated, paddle_position, brickCount = 0,
+    levelDiff;
 
 var bricks = new Array(4); // rows of bricks
 var colors = ["red", "blue", "yellow", "green"];
@@ -77,46 +79,98 @@ function hits_a_brick(x, y, i, j) {
 function startGame() {
     if (!started) {
         started = true;
-        dy = -1;
-        dx = 1;
-        console.log(id(bricks[0][0]) + " Brick");
+        levelDiff = (document.getElementById("level").value == 1) ?
+            0.5 : (document.getElementById("level").value == 2) ?
+            1 : (document.getElementById("level").value == 3) ?
+            1.5 : (document.getElementById("level").value == 4) ?
+            2 : alert("select level");
+        //calculate angle random (-1,1) --> (Math.random() * 2 - 1);
+        // (random * (max - min + 1 ) +min) min=0;
 
+        var angle = (Math.PI / 4) * (Math.random() * 2 - 1);
+        // console.log(angle * 180 / Math.PI + "angle");
+        dy = -levelDiff;
+        dx = levelDiff * angle;
+        // console.log(angle + " :angle1");
         animated = setInterval(move2, 1);
     }
+
+
 }
 
 function resetGame() {
-    started = false;
+    //tries=0, score=0, ball on paddle, bricks reset, messages=0, 
     clearInterval(animated);
-    initialize();
+    tries = 0;
+    brickCount = 0;
+    score = 0;
+    id("tries").innerText = tries;
+    id("score").innerText = score;
+    for (i = 0; i < 4; i++) {
+        for (j = 0; j < 20; j++) {
+            bricks[i][j].style.visibility = "visible";
+        }
+    }
+    started = false;
     readyToKick();
+
 }
 
 
 // ---- Extra Self functions -----
 
 function collision() {
-    if (Math.abs(pixels(ball.style.top)) >= court_height - 10) {
+    if (Math.abs(pixels(ball.style.top)) >= court_height - ball.width) {
         dy = -dy;
-        console.log(y);
     }
-    // if (Math.abs(pixels(ball.style.top)) < 21) {
-    //     dy = -dy;
-    // }
-    if (Math.abs(pixels(ball.style.left)) >= court_width || Math.abs(pixels(ball.style.left)) <= 1) {
+    if (Math.abs(pixels(ball.style.top)) < 1) { //bottom
+        //brick=same, ball on paddle, tries++ score=0 
+        clearInterval(animated);
+        started = false;
+        readyToKick();
+        tries++;
+        id("tries").innerText = tries;
+    }
+    if (Math.abs(pixels(ball.style.left)) >= court_width - ball.width || Math.abs(pixels(ball.style.left)) <= 1) {
         dx = -dx;
     }
+    //paddle
     if ((Math.abs(pixels(ball.style.left)) >= paddle_position && Math.abs(pixels(ball.style.left)) <= paddle_position + pixels("97.183px")) && Math.abs(pixels(ball.style.top)) == pixels(paddle.style.top)) {
         dy = -dy;
 
     }
 
+    for (let l = 0; l < bricks.length; l++) {
+        for (let k = 0; k < 20; k++) {
+            if (hits_a_brick(x, y, l, k) && bricks[l][k].style.visibility != "hidden") {
+                bricks[l][k].style.visibility = "hidden";
+                dy = -dy;
+                brickCount++;
+            }
+        }
+    }
 }
 
 function move2() {
-    collision();
-    y += dy;
-    x += dx;
-    ball.style.top = y + "px";
-    ball.style.left = x + "px";
+    if (brickCount == 80) {
+        score++;
+        brickCount = 0;
+        tries = 0;
+        id("score").innerText = score;
+        id("tries").innerText = tries;
+        for (i = 0; i < 4; i++) {
+            for (j = 0; j < 20; j++) {
+                bricks[i][j].style.visibility = "visible";
+            }
+        }
+        clearInterval(animated);
+        started = false;
+        readyToKick();
+    } else {
+        collision();
+        y += dy;
+        x += dx;
+        ball.style.top = y + "px";
+        ball.style.left = x + "px";
+    }
 }
