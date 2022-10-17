@@ -160,4 +160,3 @@ public class Join {
         job.waitForCompletion(true);
     }
 }
-
