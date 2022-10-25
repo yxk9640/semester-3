@@ -43,6 +43,7 @@ async function findRestaurants() {
     city = "Arlington"
     limit = 10
     url = "proxy.php?term=" + searchType + "+restaurant&location=" + city + "&limit=" + limit;
+
     xhr.open("GET", url, true);
     xhr.setRequestHeader("Accept", "application/json");
 
