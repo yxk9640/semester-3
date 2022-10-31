@@ -73,8 +73,8 @@ session_destroy();
 
                         <div id="Fav_right" style="width: 50%; display: table-cell;">
                             <h1> Favourite </h1>
-                            <form action="" method="GET">
-                            <input type=submit value="Fav DB" name="FavDB"> </input> <hr/>
+                            <form action="" method="GET"><hr/>
+                            <!-- <input type=submit value="Fav DB" name="FavDB"> </input> <hr/> -->
                             </form>
                             <?php
                                    if(isset($_GET["store"]) ){
@@ -94,13 +94,14 @@ session_destroy();
                                         $arrayFav = getK($fav_store,$tempId); // gives key value pair and required feilds to insert in table
                                         array_push($_SESSION["favourites"],getK($fav_store,$tempId));
                                         $categories = $arrayFav[$fav_store]["categories"][0]["title"];
+                                        $price = ( !empty($arrayFav[$fav_store]["price"])? $arrayFav[$fav_store]["price"]:"N/A");
                                         insertSQL($dbconnect,
                                         $arrayFav[$fav_store]["id"],
                                         $arrayFav[$fav_store]["name"],
                                         $arrayFav[$fav_store]["image_url"],
                                         $arrayFav[$fav_store]["url"],
                                         $categories,
-                                        $arrayFav[$fav_store]["price"],
+                                        $price,
                                         $arrayFav[$fav_store]["rating"],
                                         $arrayFav[$fav_store]["location"]["address1"],
                                         $arrayFav[$fav_store]["phone"]
@@ -108,19 +109,19 @@ session_destroy();
 
                                     }
                                     // echo( returnfavHTML());
-                                    
-                                }else{
-                                    if(isset($_GET["FavDB"])){
-                                        $dbconnect = DBInstance();
+                                    $dbconnect = DBInstance();
                                         $getDB = retriveSQL($dbconnect);
                                         print_r(getfavDetails($getDB));
-                                    }
-                                    else{
+                                    
+                                }else{
+                                    
                                         if(!empty($_SESSION["favourites"])){
-                                            echo(returnfavHTML());
+                                            // echo(returnfavHTML());
+                                            $dbconnect = DBInstance();
+                                            $getDB = retriveSQL($dbconnect);
+                                            print_r(getfavDetails($getDB));
                                         }   
                                     }
-                                }
 
                             ?>
                         </div>
@@ -320,7 +321,7 @@ $phone
 // values ("10","India 101","www.google.com","www.youtube.com","[12]","$$","4.4","1111 s oak","123-123-1234")');
 // $insert_qurey->execute();
 
-echo'Insert Successful';
+echo'Insert Successful </br> <hr/>';
 } 
 
 ?>
