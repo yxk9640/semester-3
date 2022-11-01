@@ -31,31 +31,32 @@ object Add {
     for (i <- 0 until rows) {
       for (j <- 0 until columns) {
         data(i*rows+j) = 0.00
-//        data(triples(0)._1%rows * rows + triples(0)._2%columns) = triples(i)._3
       }
     }
+
+
     for (i <- 0 until triples.length) {
       for (j <- 0 until triples.length) {
                 data(triples(i)._1%rows * rows + triples(i)._2%columns) = triples(i)._3
       }
     }
 
-    val bl = Block.apply(data)
-    bl
+    val blockPopulate = Block.apply(data)
+    blockPopulate
   }
 
   /* Add two Blocks */
   def blockAdd ( m: Block, n: Block ): Block = {
     /* ... */
+     val dataAdd: Array[Double] = new Array[Double](rows*columns)
+
         for (i <- 0 until rows) {
           for (j <- 0 until columns){
-            if (m.data(i*rows+j).equals(n.data(i*rows+j))) {
-              m.data(i*rows+j) += n.data(i*rows+j)
-            }
+              dataAdd(i*rows+j) = m.data(i*rows+j) + n.data(i*rows+j)
           }
         }
-
-    return m
+    val update = Block.apply(dataAdd)
+    update
   }
 
   /* Read a sparse matrix from a file and convert it to a block matrix */
@@ -68,6 +69,7 @@ object Add {
           })
     val SparseList = Sparse.collect().toList
     val Block = Sparse.map( MSparse => ( ( MSparse._1/rows,MSparse._2/columns), toBlock(SparseList) ))
+
     //place block in corresponding co-ordinates //    Map((Int,Int)->Double)
     Block
   }
@@ -76,22 +78,21 @@ object Add {
   def main ( args: Array[String] ) {
     /* ... */
     val conf = new SparkConf().setAppName("Add")
-//    conf.setMaster("local[2]")
     val sc = new SparkContext(conf)
 
-    //input matrix m
+    //input matrix JoinMN
     val createBlockMatrixM = createBlockMatrix(sc,args(0)) //return block matrix - M
     val createBlockMatrixN = createBlockMatrix(sc,args(1)) //return block matrix - N
 
-//    val res = e.map(e => (e._2, e)).join(d.map(d => (d._2, d)))
-//      .map { case (k, (e, d)) => e._1 + " " + d._1 }
 
-    val res =
+    val JoinMN = createBlockMatrixM.join(createBlockMatrixN)
+    val res = JoinMN.map(m=>(m._1,blockAdd(m._2._1,m._2._2)))
 
-//    val result = blockAdd(createBlockM,createBlockN)
 
-//    result.saveAsTextFile(args(2))
-    createBlockMatrixM.saveAsTextFile(args(2))
+
+//    createBlockMatrixM.saveAsTextFile(args(2))
+//    createBlockMatrixN.saveAsTextFile(args(2))
+    res.saveAsTextFile(args(2))
     sc.stop()
 
   }
