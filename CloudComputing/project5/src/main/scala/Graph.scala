@@ -21,40 +21,57 @@ object Graph {
         })/* put your code here */      // read the graph from the file args(0)
 
 
-    //graph._1 -> groupNum graph._2 -> Id
-//    def Scratch(graph:RDD[( Long,Long,List[(Long)])] ): RDD[(Long,Long)] ={
-//      val g:RDD[(Long,Long)] = graph.flatMap( node => node._3.map(adj=>(adj,node._1) ))
-//
-//     g
-//    }
-
     for ( i <- 1 to 5 ) {
        // For each vertex (group,id,adj) generate the candidate (id,group)
        //    and for each x in adj generate the candidate (x,group).
        // Then for each vertex, its new group number is the minimum candidate
       //------- use flatmap --------
        val groups: RDD[ ( Long, Long ) ]
-          = graph.flatMap( node => node._3.map(adj=>(adj,Math.min(node._1,adj) )))
+          = graph.flatMap(node => node._3.map(adj=>( adj, Math.min(adj,node._1) ))).
+         union(graph.map(vertex => (vertex._2,vertex._1 ))).distinct()
+
+
+
 //      graph./* put your code here */ //created only group for ID not for adj
 
 
-
 //---------      groups -> (group, vertexID) ----------
-       // reconstruct the graph using the new group numbers
-       graph = groups.map( createG => (createG._2,createG._1,List(createG._2)) )/* put your code here */
+       // reconstruct the graph using the new group numbers - graphs._2
+//       graph = groups.join(graph.map( ))
+      graph=groups.map( createGraph => (createGraph._2,createGraph._1,List(createGraph._1)
+       )) /* put your code here */
+
+
       groups.saveAsTextFile("forloop/"+i)
+      graph.saveAsTextFile("graph/"+i)
     }
 
     // print the group sizes
 //    graph.saveAsTextFile("graph/output")/* put your code here */
-   val reduceG = graph.map( nodes => (nodes._2, nodes._1 ) )
+   val reduceG = graph.map( nodes => (nodes._1, 1 ) )
     reduceG.reduceByKey( (k,v)=> k + v ).saveAsTextFile("output")
-
 
     sc.stop()
   }
 }
 
+// How to update the graph with new group number and create a new one
 
 /// Comments for update
 // Unable to print minimum of the group ID
+
+
+//graph._1 -> groupNum graph._2 -> Id
+//    def Scratch(graph:RDD[( Long,Long,List[(Long)])] ): RDD[(Long,Long)] ={
+//      val g:RDD[(Long,Long)] = graph.flatMap( node => node._3.map(adj=>( adj, Math.min(adj,node._1) ))
+//
+//         case node =>
+//           if (node._3.length>0) node._3.map(adj => (adj, Math.min(adj,node._1) ))
+//           else (node._2,node._1)
+//     g
+//    }
+
+//    def getCandi(graph: RDD[(Long,Long,List[(Long)])]): RDD[(Long,Long)] = {
+//      val res = graph.map(vertex => (vertex._2,vertex._1 )).union(graph.flatMap(node => node._3.map(adj=>( adj, Math.min(adj,node._1) ))))
+//      res
+//    }

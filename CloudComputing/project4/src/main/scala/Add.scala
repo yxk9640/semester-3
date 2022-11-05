@@ -58,6 +58,7 @@ object Add {
      val gentriple = Sparse.map(
        Sparse => ((Sparse._1 / rows, Sparse._2 / columns),
         List((Sparse._1 % rows, Sparse._2 % columns, Sparse._3))))
+
     val reduce  = gentriple.reduceByKey( (k,v)=> k ++ v)
     val blockGen = reduce.map(listGen => (listGen._1,toBlock(listGen._2)))
 
