@@ -1,10 +1,10 @@
-<pre>
+<!-- <pre> -->
 <?php
 session_start();
 $_SESSION["display"]="";
 $_SESSION["userfile"]="";
 // put your generated access token here
-$auth_token = 'sl.BSchwdTwwjc51l-FaaMrzp19nCE3yRv8Y3hE_NRQFPgNfcxf5WGdk_oK9Bx-MMmRTU_ywhfiHvwsTOFzkxj-Ns_85vVBe4E-_vuEPXFHqyVoBnDppFt90wmDup61Ti6EIrl2ppaAbxk1';
+$auth_token = 'sl.BSvabekrbVjovQU8KpEY-QG7EbnqwN5LZcA53ZruZMsDN9DMUzAqoyxxLhzJBfH8r-iEmES1f1L1B1_sEtgBw6yWAIenQyYbXFfNMCxcFF6ho1BRgoQezxnct1zUCKbkvM-w20-XF7lK';
 // import the Dropbox library
 include "dropbox.php";
 
@@ -46,30 +46,36 @@ function ImgDelete(String $imagePath){
 ?>
 <!DOCTYPE html>
 <html lang=".en.">
-  
   <head>
       <title>ALBUM</title>
       <meta charset=".utf-8." />
   </head>
-  
         <body>
          <div>
-            <form enctype="multipart/form-data"  action="" method="POST">
+            <form enctype="multipart/form-data"  action="album.php" method="POST">
                 <h1> Select image to upload: </h1>
                     <div>
                         <input type="hidden" name="fileName" value="" />
+                        <input type="hidden" name="MAX_FILE_SIZE" value="3000000" />
                         <input type="file" name="imageInput" > 
                         <input type="submit" name="upload" value="Upload">
                         <!-- code to upload to dropbox- use form submit and php call -->
                         <?php
                               if(isset($_POST["upload"]) ){
-                                 if( !empty($_FILES["imageInput"]['name']) ){
-                                 header("location:album.php?userfile=".$_FILES["imageInput"]['name']);                           
-                                 ImgUpload($_FILES["imageInput"]['name']);
-                                 print_r($_FILES["imageInput"]['name']);
+                                 if( !empty($_FILES["imageInput"]["name"]) ){
+                                    move_uploaded_file($_FILES['imageInput']['tmp_name'], $_FILES['imageInput']['name']);                           
+                                    ImgUpload($_FILES["imageInput"]["name"]);
+                                    header("location:album.php?userfile=".$_FILES["imageInput"]["name"]); 
+                                    unlink($_FILES["imageInput"]["name"]);
+                                    
+                                                                  
                               }
                               else echo'No file';
                            }
+                           // print_r ($_FILES);
+                           
+                           
+                           
                         ?>
                     </div>
                 <hr/>    
@@ -84,13 +90,20 @@ function ImgDelete(String $imagePath){
                             <?php  
                              // print the files in the Dropbox folder images
                               $result = listFolder("/images");
-                              foreach ($result['entries'] as $x) {
-                                 // echo ' <a href="'. $x["path_display"].'">'
-                                 echo'<a href="album.php?display='.$x["path_display"].'">'.$x["name"].'<a/> 
-                                  <hr/>';
+                              if( !empty($result['entries'])){
+                                 foreach ($result['entries'] as $x) {
+                                    // echo ' <a href="'. $x["path_display"].'">'
+                                    echo'<form action="album.php?delete='.$x["path_display"].'" method="POST" ><input type=submit name="delete" value="Delete")> 
+                                    </form><a href="album.php?display='.$x["path_display"].'">'.$x["name"].'<a/>    
+                                     <hr/>';
+                                 }
+
                               }
+
                               ?>
                         </div>
+                        
+
                         <div id="ImageSection" style="width: 50%; display: table-cell;">
                             <h1> Image Section </h1>
                             <!-- code to display images if clicked -->
@@ -99,30 +112,22 @@ function ImgDelete(String $imagePath){
                                     download($_GET["display"],"tmp/tmp.jpg");                                    
                                     // download("/images/leonidas.jpg","tmp/tmp.jpg");                                 
                                     echo '<div> 
-                                    <img src="tmp/tmp.jpg" style="width="100%" height="200px"" /> </br>                     
-                                    <form action="album.php?delete='.$_GET["display"].'" method="POST" >
-                                    <input type=submit name="delete" value="Delete" )> 
-                                    </form>
+                                    <img src="tmp/tmp.jpg" style="width="10px" height="200px"" /> </br>                     
                                     </div>
                                     ';
                                     $_SESSION["display"]=$_GET["display"];
                                     // print_r($_GET["display"]);
                                  }
-
                                  if(isset($_GET["delete"]) ){
                                     ImgDelete($_GET["delete"]);                           
                                     echo 'Delete Successful';
-
                                     // header("Refresh:0");
-                                 }
-                                 
+                                 }                                 
                             ?>
                         </div>
                     </div>
-                </div>
-            
+                </div>            
         </body>
-
 </html>
-</pre>
+<!-- </pre> -->
 <!-- <img src="tmp/tmp.jpg"/> -->
