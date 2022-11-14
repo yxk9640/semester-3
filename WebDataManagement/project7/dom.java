@@ -30,7 +30,7 @@ public class dom {
                         NodeList place = c.item(19).getChildNodes();
                         if ( place.item(1).getTextContent().equals("LIB") && place.item(3).getTextContent().equals("204"))
                          System.out.println(
-                                 c.item(9).getFirstChild().getTextContent()
+                                "\t" + c.item(9).getFirstChild().getTextContent()
 //                                 " Building " + place.item(1).getTextContent() +
 //                                 " Room " + place.item(3).getTextContent()
 
@@ -51,6 +51,7 @@ public class dom {
         DocumentBuilder docBuil = dbf.newDocumentBuilder();
         Document doc = docBuil.parse((new URL("http://aiweb.cs.washington.edu/research/projects/xmltk/xmldata/data/courses/reed.xml")).openStream());
         Node root = doc.getDocumentElement();
+        System.out.println("List of titles of Math courses taught in LIB 204: ");
         getNodes(root);
 
     }
