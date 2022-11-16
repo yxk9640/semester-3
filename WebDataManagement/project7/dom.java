@@ -20,10 +20,8 @@ public class dom {
 //            getName(e);
 //        }
             NodeList c = e.getChildNodes();
-
             for (int k = 0; k < c.getLength(); k++){
                 Node childNode = c.item(k);
-
                 if (childNode.getNodeName() == "subj"){
                     if (childNode.getFirstChild().getTextContent().equals("MATH"))
                     {
