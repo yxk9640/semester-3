@@ -1,32 +1,94 @@
-<?xml version="1.0" encoding="UTF-8"?>
- ANTH 23 
- BIOL 56 
- CHEM 64 
- CHIN 8 
- CLAS 3 
- CRWR 10 
- DANC 6 
- ECON 23 
- ENG 27 
- ART 23 
- FREN 14 
- GER 10 
- GRK 4 
- HIST 30 
- HUM 42 
- LAT 4 
- LING 10 
- LIT 16 
- MATH 45 
- MUS 25 
- PE 71 
- PHIL 17 
- PHYS 49 
- POL 18 
- PSY 37 
- REL 13 
- RUSS 12 
- SOC 14 
- SPAN 15 
- THEA 13 
- LBST 1
+<?xml version="1.0" encoding="UTF-8"?><department>
+<department_Code>ANTH</department_Code>
+<Course_Count>23</Course_Count>
+ 
+<department_Code>BIOL</department_Code>
+<Course_Count>56</Course_Count>
+ 
+<department_Code>CHEM</department_Code>
+<Course_Count>64</Course_Count>
+ 
+<department_Code>CHIN</department_Code>
+<Course_Count>8</Course_Count>
+ 
+<department_Code>CLAS</department_Code>
+<Course_Count>3</Course_Count>
+ 
+<department_Code>CRWR</department_Code>
+<Course_Count>10</Course_Count>
+ 
+<department_Code>DANC</department_Code>
+<Course_Count>6</Course_Count>
+ 
+<department_Code>ECON</department_Code>
+<Course_Count>23</Course_Count>
+ 
+<department_Code>ENG</department_Code>
+<Course_Count>27</Course_Count>
+ 
+<department_Code>ART</department_Code>
+<Course_Count>23</Course_Count>
+ 
+<department_Code>FREN</department_Code>
+<Course_Count>14</Course_Count>
+ 
+<department_Code>GER</department_Code>
+<Course_Count>10</Course_Count>
+ 
+<department_Code>GRK</department_Code>
+<Course_Count>4</Course_Count>
+ 
+<department_Code>HIST</department_Code>
+<Course_Count>30</Course_Count>
+ 
+<department_Code>HUM</department_Code>
+<Course_Count>42</Course_Count>
+ 
+<department_Code>LAT</department_Code>
+<Course_Count>4</Course_Count>
+ 
+<department_Code>LING</department_Code>
+<Course_Count>10</Course_Count>
+ 
+<department_Code>LIT</department_Code>
+<Course_Count>16</Course_Count>
+ 
+<department_Code>MATH</department_Code>
+<Course_Count>45</Course_Count>
+ 
+<department_Code>MUS</department_Code>
+<Course_Count>25</Course_Count>
+ 
+<department_Code>PE</department_Code>
+<Course_Count>71</Course_Count>
+ 
+<department_Code>PHIL</department_Code>
+<Course_Count>17</Course_Count>
+ 
+<department_Code>PHYS</department_Code>
+<Course_Count>49</Course_Count>
+ 
+<department_Code>POL</department_Code>
+<Course_Count>18</Course_Count>
+ 
+<department_Code>PSY</department_Code>
+<Course_Count>37</Course_Count>
+ 
+<department_Code>REL</department_Code>
+<Course_Count>13</Course_Count>
+ 
+<department_Code>RUSS</department_Code>
+<Course_Count>12</Course_Count>
+ 
+<department_Code>SOC</department_Code>
+<Course_Count>14</Course_Count>
+ 
+<department_Code>SPAN</department_Code>
+<Course_Count>15</Course_Count>
+ 
+<department_Code>THEA</department_Code>
+<Course_Count>13</Course_Count>
+ 
+<department_Code>LBST</department_Code>
+<Course_Count>1</Course_Count>
+</department>

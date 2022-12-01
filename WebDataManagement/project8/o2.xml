@@ -1,789 +1,1183 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?><department>
 <title>Introduction to Anthropology</title>
- 	<instructor>Brightman Makley Stasch Silverstein</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Sex and Gender</title>
- 	<instructor>Makley</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Field Biology of Amphibians</title>
- 	<instructor>Kaplan</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Bacterial Pathogenesis</title>
- 	<instructor/>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Seminar in Biology</title>
- 	<instructor>Yezerinac</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>MolecularStructure and Properties</title>
- 	<instructor>Geselbracht</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Languages the Americas:Mayan</title>
- 	<instructor>Haviland</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Chemical Reactivity</title>
- 	<instructor>Glasfeld</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Anthropology of Europe</title>
- 	<instructor>Silverstein</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Organic Chemistry I</title>
- 	<instructor>Shusterman</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Organic Chemistry II</title>
- 	<instructor>McDougal</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Prob in IndonesianEthnography</title>
- 	<instructor>Stasch</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro Inorganic Chemistry</title>
- 	<instructor>Geselbracht</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Gender and Ethnicity China, Tibet</title>
- 	<instructor>Makley</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Environmental Chemistry</title>
- 	<instructor>Dunne</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Analytical Chemistry</title>
- 	<instructor>McClard</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Physical Chemistry Laboratory</title>
- 	<instructor>Ahmadi</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Computational Organic Chem</title>
- 	<instructor>Shusterman</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Statistical Thermodynamics</title>
- 	<instructor>Ahmadi</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Quantum Mechanics  and  MolStruct</title>
- 	<instructor>Ahmadi</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Advanced Inorganic Chemistry</title>
- 	<instructor>Geselbracht</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Adv Synth Organic Chemistry</title>
- 	<instructor>McDougal</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Myth</title>
- 	<instructor>Stasch</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Structural Biochemistry</title>
- 	<instructor>Glasfeld</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Metabolic Biochemistry</title>
- 	<instructor>McClard</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Biochemical Methods</title>
- 	<instructor>McClard</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>First Year Chinese</title>
- 	<instructor/>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Second Year Chinese</title>
- 	<instructor/>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Third Year Chinese</title>
- 	<instructor>Wu</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Media  and  Culture Post-MaoChina</title>
- 	<instructor>Makley</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Classical Chinese</title>
- 	<instructor>Rhew</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>20 Cent Chin Fiction, 1919-49</title>
- 	<instructor>Wu</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Chinese Narrative Tradition</title>
- 	<instructor>Rhew</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Yijing: Text and Tradition</title>
- 	<instructor>Rhew</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>20th Century Chinese Poetry</title>
- 	<instructor>Wu</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Greek Tragedy</title>
- 	<instructor>Englert</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Ancient History: Rome</title>
- 	<instructor>Kelly</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Specl Topics in Roman History</title>
- 	<instructor>Kelly</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro to Creative Writing</title>
- 	<instructor>Hillis</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro Poetry Writing</title>
- 	<instructor>Williams</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Indians  and  Northrn NativeAmers</title>
- 	<instructor>Brightman</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro to Fiction Writing</title>
- 	<instructor>Hillis</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intermediate Poetry: StudioII</title>
- 	<instructor>Williams</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro to ScreenwritingWrkshop</title>
- 	<instructor>Hillis</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Adv Poet Writng: SequentVoice</title>
- 	<instructor>Williams</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Adv Poet Writing:NaturalVoice</title>
- 	<instructor>Williams</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Advanced Fiction Writing</title>
- 	<instructor>Hillis</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Basic Technique</title>
- 	<instructor>Mann</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Technique, Design  and Compostion</title>
- 	<instructor>Wong</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Urban Anthropology</title>
- 	<instructor>Silverstein</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Improvisation</title>
- 	<instructor>Mann</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Adv Techniques  and  CompositionI</title>
- 	<instructor>Mann</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Adv Technique  and  CompositionII</title>
- 	<instructor>Wong</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Dance Theory and Criticism</title>
- 	<instructor>Wong</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro to Economic Analysis</title>
- 	<instructor>Clausing Netusil</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Nature, Cult  and Envirnmentalism</title>
- 	<instructor>Brightman</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Survey of Econometric Methods</title>
- 	<instructor>Netusil</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Theory and  Practice Econometrics</title>
- 	<instructor>Parker</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Microeconomic Theory</title>
- 	<instructor>Despins</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Macroeconomic Theory</title>
- 	<instructor>Parker</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>History of Economic Thought</title>
- 	<instructor>Clausing</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Monetary and Fiscal Policy</title>
- 	<instructor>Parker</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>International Macroeconomics</title>
- 	<instructor>Clausing</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Economics of the PublicSector</title>
- 	<instructor>Netusil</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Structuralism and Semiotics</title>
- 	<instructor>Stasch</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Environment  and  Nat Resrce Econ</title>
- 	<instructor>Netusil</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Economics of Development</title>
- 	<instructor>Despins</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>International Trade</title>
- 	<instructor>Clausing</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Seminar: Unemployment</title>
- 	<instructor>Parker</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Economics  and  Game Theory</title>
- 	<instructor>Despins</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Econ Envirn, Intl Trade,Devel</title>
- 	<instructor>Despins</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Economic Growth</title>
- 	<instructor>Parker</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro Narr:Native AmericanLit</title>
- 	<instructor>Arnold</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro Narr: Telling Lives</title>
- 	<instructor>Leveen</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro Narrative: The Essay</title>
- 	<instructor>Duquette</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro Fict:Colonl and LaterNovels</title>
- 	<instructor>Gillcrist</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro Fict:Portraits ofLadies</title>
- 	<instructor>King</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro Fict: The Short Story</title>
- 	<instructor>Baker</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro to Poetry and Poetics</title>
- 	<instructor>Steinman Stauder</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro to Drama: The 1990s</title>
- 	<instructor>Savery</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro Drama:Conventn  and Inovatn</title>
- 	<instructor>Porter</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Jun Sem: Epic and Novel</title>
- 	<instructor>Sherman</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Theories of Culture</title>
- 	<instructor>Brightman</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Jun Sem:Irony, Allegory, Epic</title>
- 	<instructor>Knapp</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Amer. Studies Seminar: TheEnd</title>
- 	<instructor>Arnold</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Fict:Wolff,Forster,Bloomsbury</title>
- 	<instructor>Gillcrist</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Fict: Novel  and  Theory Mimesis</title>
- 	<instructor>King</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Mod Fict:Representing Mothers</title>
- 	<instructor>Sherman</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>American Lit: Race in America</title>
- 	<instructor>Baker</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Amer Lit: The James Brothers</title>
- 	<instructor>Duquette</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>American Lit: Speaking ofRace</title>
- 	<instructor>Leveen</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>20th Cent African-Amercan Lit</title>
- 	<instructor>Savery</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Love in Shakespeare</title>
- 	<instructor>Porter</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Introductory Drawing</title>
- 	<instructor>Knutson Ondrizek</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Skepticism in Shakespeare</title>
- 	<instructor>Knapp</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Poetry: Pound and H.D.</title>
- 	<instructor>Stauder</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Poetry  and  History:Contemp Amer</title>
- 	<instructor>Steinman</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Literary Theory:EthicsReading</title>
- 	<instructor>Knapp</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>First Year French</title>
- 	<instructor/>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Second Year French</title>
- 	<instructor>Delehanty Berkvam</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Stylistics and Composition</title>
- 	<instructor>Khan</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Lit  and  Society (16th Century)</title>
- 	<instructor>Berkvam</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Lit  and  Society (18th Century)</title>
- 	<instructor>Berkvam</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Early Modern French Narrative</title>
- 	<instructor>Khan</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>17th Cent French Drama</title>
- 	<instructor>Delehanty</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>20th C French Poetry  and Poetics</title>
- 	<instructor>Hochman</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>20th Century French Theatre</title>
- 	<instructor>Khan</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Seminar:Uses of Literature</title>
- 	<instructor>Hochman</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Frst Yr German:A Foundation</title>
- 	<instructor/>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Figure Drawing</title>
- 	<instructor>Ondrizek</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Secnd Yr Ger:CultralPerspctvs</title>
- 	<instructor>Gokberk</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Adv Conversation and Writing</title>
- 	<instructor>Mieszkowski</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Advancd Conversation and Writing</title>
- 	<instructor>Irmscher</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Modernism: Berlin</title>
- 	<instructor>Gokberk</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Contemporary German Prose</title>
- 	<instructor>Gokberk</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Modern German Theatre</title>
- 	<instructor>Rudolf</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>German Thought Postmodrn Era</title>
- 	<instructor>Irmscher</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>German Theory II: Body Media</title>
- 	<instructor>Mieszkowski</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>First Year Greek</title>
- 	<instructor/>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Second Year Greek</title>
- 	<instructor>Wolfe</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Printmaking</title>
- 	<instructor>Knutson</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Advanced Greek</title>
- 	<instructor>Tron Nicholson</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Late Imperial China</title>
- 	<instructor>Fix</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Modern China</title>
- 	<instructor>Fix</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Cultr  and  Society 19 CentAmerca</title>
- 	<instructor>Dirks</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Culture and Society 20 Cent Amer</title>
- 	<instructor>Dirks</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Introduction to Judaism</title>
- 	<instructor>McCalla</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Spcl Tops: Vietnam War</title>
- 	<instructor>Segel</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Subaltern Stds Historiography</title>
- 	<instructor>Fix</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Introduction to Art History</title>
- 	<instructor>Diebold</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>The Family in China and Japan</title>
- 	<instructor>Fix</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Devel of Britain 1700-1830</title>
- 	<instructor>Sacks</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>The Third Reich</title>
- 	<instructor>Mueller</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>The Russian Revolution</title>
- 	<instructor>Smith</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Weimar:State,Society  and Culture</title>
- 	<instructor>Mueller</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Old Regime France 1600-1750</title>
- 	<instructor>Breen</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>The French Enlightenment</title>
- 	<instructor>Breen</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Civil War and Reconstruction</title>
- 	<instructor>Iaccarino</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Gender and History</title>
- 	<instructor>Dirks</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>American Slavery</title>
- 	<instructor>Iaccarino</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Mexico: Indepdence toRevolutn</title>
- 	<instructor>Garrett</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Mexico  and  the Spanish Conquest</title>
- 	<instructor>Garrett</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Jun Sem: Depression Era U.S.</title>
- 	<instructor>Dirks</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Sem: Comty, Auth, Cult15-1700</title>
- 	<instructor>Sacks</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>West Humanities: Greece  and Rome</title>
- 	<instructor>King Arnold Drumm Englert Sherman Leveen Arkonovich Gillcrist Breen Baker Duquette Nicholson Stauder Feener Delehanty Foat Mandell David Latham Wolfe Mieszkowski Kelly Hendrickson Sacks Iaccarino</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Introductory Painting</title>
- 	<instructor>Knutson</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Introductory Painting II</title>
- 	<instructor>Knutson</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Early Modern Europe</title>
- 	<instructor>Knapp Steinman Kierstead Garrett</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Sculpture</title>
- 	<instructor>Ondrizek</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Modern Humanities</title>
- 	<instructor>Mueller van Dyke Porter Segel Gokberk</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Foundatns ChineseCivilization</title>
- 	<instructor>Brashier Wu Fix</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Sculpture II</title>
- 	<instructor>Ondrizek</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>First Year Latin</title>
- 	<instructor/>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Second Year Latin</title>
- 	<instructor>Wolfe</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Advanced Latin</title>
- 	<instructor>Englert Tron</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>General Linguistics</title>
- 	<instructor>Haviland</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Language and Society</title>
- 	<instructor>Haviland</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Introductory Syntax</title>
- 	<instructor>Haviland</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Morphosyntactic Typology</title>
- 	<instructor>Haviland</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Early Medieval Art</title>
- 	<instructor>Diebold</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Psycholinguistics</title>
- 	<instructor>Canseco-Gonzale</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Psych of Language Acquisition</title>
- 	<instructor>Canseco-Gonzale</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Russian Short Fiction</title>
- 	<instructor>Lencek</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>20-Cent Chin Fiction, 1919-49</title>
- 	<instructor>Wu</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Medieval Manuscript Illumin</title>
- 	<instructor>Diebold</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>20-Century Chinese Poetry</title>
- 	<instructor>Wu</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Russian Lit:Chekhov toPresent</title>
- 	<instructor>Bershtein</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>The Myth of St. Petersburg</title>
- 	<instructor>Bershtein</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>German Thought Postmod Era</title>
- 	<instructor>Irmscher</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Russian Lit:Gogol  and Dostoevsky</title>
- 	<instructor>Lencek</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Russ Decadent/SymbolistCultur</title>
- 	<instructor>Bershtein</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Divine Comedy  and Visualizations</title>
- 	<instructor>David</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>20th C Russian CriticalTheory</title>
- 	<instructor>Lencek</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Calculus I</title>
- 	<instructor>Mayer Shurman Potluri</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Calculus II</title>
- 	<instructor>Mayer Perkinson Jones Wieting Bernhard</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Art and Politics in France</title>
- 	<instructor>Hendrickson</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Introduction to Computing</title>
- 	<instructor>Fix</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Introduction to Combinatorics</title>
- 	<instructor>Shurman</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Pol Hist of Art Between Wars</title>
- 	<instructor>van Dyke</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro to Probability  and Statist</title>
- 	<instructor>Jones</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Introduction to Analysis I</title>
- 	<instructor>Perkinson Wieting Bernhard</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Introduction to Analysis II</title>
- 	<instructor>Wieting Bernhard</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Art  and  Pol in Weimar Republic</title>
- 	<instructor>van Dyke</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Complex Analysis</title>
- 	<instructor>Perkinson</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Advanced Calculus</title>
- 	<instructor>Shurman</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Linear Algebra</title>
- 	<instructor>Mayer Potluri Jones</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Abstract Algebra</title>
- 	<instructor>Bernhard</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Geometry</title>
- 	<instructor>Wieting</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Combinatorics</title>
- 	<instructor>Perkinson</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Data Structure  and  Algorithm</title>
- 	<instructor>Fix</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Computer Graphics</title>
- 	<instructor>Fix</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>New West in Amer Photography</title>
- 	<instructor>Fillin-Yeh</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Probability</title>
- 	<instructor>Wieting</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Topics in Advanced AnalysisII</title>
- 	<instructor>Mayer</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Elemetary Number Theory</title>
- 	<instructor>Shurman</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Algebraic Structures</title>
- 	<instructor>Bernhard</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Topics In Computer Theory</title>
- 	<instructor>Fix</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Chamber Orchestra</title>
- 	<instructor>Schiff</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Chorus</title>
- 	<instructor>Hancock</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Collegium Musicum</title>
- 	<instructor>Hancock</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intermed Paint,Draw,PrintmakI</title>
- 	<instructor>Knutson</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro to Music Listening</title>
- 	<instructor>Falk</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Music Theory I</title>
- 	<instructor>Hancock</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Theory II:IntermediateHarmony</title>
- 	<instructor>Hancock</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>IntermedPaint,Draw,PrintmakII</title>
- 	<instructor>Knutson</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Survey of Western Music</title>
- 	<instructor>Falk</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Theory III: BaroqueCounterpnt</title>
- 	<instructor>Schiff</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>The String Quartet</title>
- 	<instructor>Falk</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Representation in Music</title>
- 	<instructor>Falk</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Romantic Music</title>
- 	<instructor>Hancock</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Jazz</title>
- 	<instructor>Schiff</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Modernism in Music</title>
- 	<instructor>Schiff</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Medieval and RenaissanceMusic</title>
- 	<instructor>Falk</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Advanced Analysis</title>
- 	<instructor>Schiff</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intermed Sculp  and  Multimedia I</title>
- 	<instructor>Ondrizek</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Aerobics</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>African Dance</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Aikido</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Archery</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Bellydance</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Ballroom Dance-Beginning</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Ballroom Dance-Intermediate</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Canoeing</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intermed Sculp  and  MultimediaII</title>
- 	<instructor>Ondrizek</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Self Defense</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Fencing</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Folkdance</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Golf</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Yoga-Hatha</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Judo</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Juggling</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Jitterbug</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Yoga-Kundilini</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Kayaking-Intermediate</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Leonardo, Raphael,Michelangel</title>
- 	<instructor>David</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Lifeguard Training</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Yoga-Relaxaion</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Rock Climbing</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Rugby-Men and Women</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Rowing-Beginning</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Rowing-Intermediate</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Softball</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Squash-Beginning</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Squash-Intermediate</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Sailing</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro Biology Lect and Lab</title>
- 	<instructor>Shampay Black</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Tai Chi-Beginning</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Tai Chi-Intermediate</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Tennis-Advanced</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Tennis-Beginning</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Tennis-Intermediate</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Ultimate Frisbee</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>White Water Rafting</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Badminton</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Basketball-Coed</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Backcountry Navigation</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Bowling</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Folkdancing</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Hiking Around Portland</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Yoga-Kundlini</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Modern Dance</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Yoga-Relaxation</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Raquetball-Beginning</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Squash-beginning</title>
- 	<instructor>Casey</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Introduction to Philosophy</title>
- 	<instructor>Hinchliff Latham Reeve</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Logic</title>
- 	<instructor>Taschek</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Ancient Philosophy</title>
- 	<instructor>Reeve</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Post-Kantian Continental Phil</title>
- 	<instructor>Peck</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Metaphysics</title>
- 	<instructor>Hinchliff</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Epistemology</title>
- 	<instructor>Taschek</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Ethics</title>
- 	<instructor>Arkonovich</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Philosophy of Mind</title>
- 	<instructor>Hinchliff</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Adv Topics:APrior,Nec,Anlytic</title>
- 	<instructor>Hinchliff</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Advanced Topics:Phil of Mind</title>
- 	<instructor>Reeve</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Advanced Topics: Epistemology</title>
- 	<instructor>Taschek</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Adv Topics: Ethics</title>
- 	<instructor>Latham</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Major Figures:Existentialists</title>
- 	<instructor>Peck</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Major Figures: Davidson</title>
- 	<instructor>Taschek</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Major Figures: Hume</title>
- 	<instructor>Arkonovich</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>General Physics I</title>
- 	<instructor>Bonfim</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Introduction to Physics</title>
- 	<instructor>Reynolds Staff</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>General Physics II</title>
- 	<instructor>Griffiths</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Classical Mechanics I</title>
- 	<instructor>Reynolds</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Electrodynamics I</title>
- 	<instructor>James</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Electrodynamics II</title>
- 	<instructor>James</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Optics</title>
- 	<instructor>Mitchell</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Advanced Laboratory I</title>
- 	<instructor>Essick</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Advanced Laboratory II</title>
- 	<instructor>Mitchell</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Quantum Mechanics I</title>
- 	<instructor>Wheeler</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Thermal Physics</title>
- 	<instructor>Reynolds</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Solid State Physics</title>
- 	<instructor>Essick</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Elementary Particles</title>
- 	<instructor>Griffiths</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Scientific Computation</title>
- 	<instructor>Crandall</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Classical Mechanics II</title>
- 	<instructor>Wheeler</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Quantum Mechanics II</title>
- 	<instructor>Wheeler</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro Political Analysis</title>
- 	<instructor>Rejali</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Empirical Political Theory</title>
- 	<instructor>Gronke</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Classical PoliticalPhilosophy</title>
- 	<instructor>Mandell</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Modern Political Philosophy</title>
- 	<instructor>Steinberger</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Comparative Politics</title>
- 	<instructor>Andreas</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Research Methods</title>
- 	<instructor>Tudor</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Democratic Theory</title>
- 	<instructor>Mandell</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Politics of Globalization</title>
- 	<instructor>Andreas</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Environmental Politics</title>
- 	<instructor>Teske</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Pol of Democratic Participatn</title>
- 	<instructor>Teske</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>States and Illegal Markets</title>
- 	<instructor>Andreas</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Approaches to Violence</title>
- 	<instructor>Rejali</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Pol of Border and US-Mexico</title>
- 	<instructor>Andreas</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Con. Law and JudicialPolitics</title>
- 	<instructor>Kapsch</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Systems of Justice</title>
- 	<instructor>Kapsch</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>International CriminalJustice</title>
- 	<instructor>Rejali</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Machiavelli</title>
- 	<instructor>Rejali</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Political Philosophies ofWork</title>
- 	<instructor>Rejali</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro to Psychology I</title>
- 	<instructor>Reisberg</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro to Psychology</title>
- 	<instructor>Reisberg</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro to Psychology II</title>
- 	<instructor>Neuringer</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Social Psychology</title>
- 	<instructor>Oleson</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Health Psychology</title>
- 	<instructor>Herman</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Social Development</title>
- 	<instructor>Bulkley</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Community Psychology</title>
- 	<instructor>Herman</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Psychobiology</title>
- 	<instructor>Dickinson Rhodes</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Neuropsychology</title>
- 	<instructor>Canseco-Gonzale</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Psychopharmacology</title>
- 	<instructor>Dickinson</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Thinking</title>
- 	<instructor>Reisberg</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Research Design  and  DataAnalysi</title>
- 	<instructor>Oleson</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Psychopathology</title>
- 	<instructor>Herman</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Human Development</title>
- 	<instructor>Bulkley</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Cognitive Processes</title>
- 	<instructor>Reisberg</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Learning</title>
- 	<instructor>Neuringer</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Music Perception</title>
- 	<instructor>Reisberg</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Cross-Cultural Psychology</title>
- 	<instructor>Bulkley</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Junior Seminar</title>
- 	<instructor>Rhodes Foat</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Psychobiology Research</title>
- 	<instructor>Dickinson</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Clinical Psychology</title>
- 	<instructor>Herman</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intro to Religions of Asia</title>
- 	<instructor>Brashier</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Introduction to Islam</title>
- 	<instructor>Feener</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Theory  and  Method in RelStudies</title>
- 	<instructor>Brashier</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Theory  and Methods in RelStudies</title>
- 	<instructor>Brashier</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>History of Religion</title>
- 	<instructor>McCalla</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Chinese Mahayana Texts</title>
- 	<instructor>Brashier</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Missing Persons World ofIslam</title>
- 	<instructor>Feener</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Romanticism and Religion</title>
- 	<instructor>McCalla</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Spcl Top Ancient Christianity</title>
- 	<instructor>Foat</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>First Year Russian</title>
- 	<instructor> Lencek</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Second Year Russian</title>
- 	<instructor/>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Vascular Plant Diversity</title>
- 	<instructor>Raubeson</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Advanced Russian</title>
- 	<instructor>Bershtein</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>20th Century Russian Poetry</title>
- 	<instructor>Lencek</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Mod Russ Lit:Chekov toPresent</title>
- 	<instructor>Bershtein</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Russ Lit: Gogol  and  Dostoevsky</title>
- 	<instructor>Lencek</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Introduction to Sociology</title>
- 	<instructor>Tudor Hrycak Schneiberg</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Race and Ethnicity</title>
- 	<instructor>Schneiberg</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Sociology of Religion</title>
- 	<instructor>Tudor</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>American Capitalism</title>
- 	<instructor>Schneiberg</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Sociology of Culture</title>
- 	<instructor>Hrycak</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>First Year Spanish</title>
- 	<instructor>Drumm Moret Schulz</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Second Year Spanish</title>
- 	<instructor>Fischer Moret</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Theory  and  Practice HispanicLit</title>
- 	<instructor>Moret Schulz</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Spanish Short Story</title>
- 	<instructor>Alonso</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Animal Behav.  and  Behav.Ecology</title>
- 	<instructor>Yezerinac</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Modern Peninsular Drama</title>
- 	<instructor>Drumm</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Mod Spanish American Drama</title>
- 	<instructor>Larisch</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Penin Lit: Dogma  and  Disbelief</title>
- 	<instructor>Garcia-Bryce</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Spl Tops Span Amer Lit:Borges</title>
- 	<instructor>Fischer</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>The City in Span Amer Lit</title>
- 	<instructor>Schulz</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Lit Responses to Dictatorship</title>
- 	<instructor>Fischer</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Introduction to Theatre</title>
- 	<instructor>Worley</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Masks  and  Make-up Design</title>
- 	<instructor>Carr</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Design for the Theatre: Sets</title>
- 	<instructor>Muller</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Costume History  and  Design</title>
- 	<instructor>Carr</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Design for Theatre: Lights</title>
- 	<instructor>Muller</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Acting Laboratory</title>
- 	<instructor>Worley</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Plays and Playhouses</title>
- 	<instructor>Clinton</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Intercultr ExperimentsTheatre</title>
- 	<instructor>Worley</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Playwriting</title>
- 	<instructor>Clinton</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Techniques of Acting</title>
- 	<instructor>Worley</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Directing I</title>
- 	<instructor>Clinton</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Special Problems in Directing</title>
- 	<instructor>Clinton</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Topics in FrenchEnlightenment</title>
- 	<instructor>Kierstead</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Greek Humanities</title>
- 	<instructor>King</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>ColonizingAfrica:Conrad and Congo</title>
- 	<instructor>Lowe</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Don Quixote  and  Narr. Theory</title>
- 	<instructor>Drumm</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Ornamental Art</title>
- 	<instructor>Wieting</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Experiments Intercult Theatre</title>
- 	<instructor>Worley</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Developmental Biology</title>
- 	<instructor>Black</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Genetics and Gene Regulation</title>
- 	<instructor>Shampay</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Microbiology</title>
- 	<instructor>Mellies </instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Language in Society</title>
- 	<instructor>Haviland</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Genetics and MolecularBiology</title>
- 	<instructor>Russell</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Population Bio:Ecolgy and Evolutn</title>
- 	<instructor>Kaplan</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Ethnic  and  Nation France  and  NAfr</title>
- 	<instructor>Silverstein</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Cellular Biology</title>
- 	<instructor>McClellan</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Animal Physiology</title>
- 	<instructor>Arch</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+ 
 <title>Evolutionary Biology</title>
- 	<instructor>Raubeson</instructor>
+ 	<instructor>distinct-values(doc("reed.xml")//course[title=$x]/instructor)</instructor>
+</department>
