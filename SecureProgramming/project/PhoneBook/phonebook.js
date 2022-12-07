@@ -1,23 +1,7 @@
-const express = require('express');
-const app = express()
+console.log('Started');
+// import restAPI from './RestAPI.js';
+console.log('Connect to API');
+const restAPI = require('./RestAPI');
+console.log('Initiate connection to DB');
 
-const port = 3000;
-
-app.listen(port, () => {
-    console.log(`App running at http://localhost:${port}`)
-});
-
-
-app.get('/foo', function(req, res) {
-    res.json({ 'foo': 'bar' });
-});
-
-app.use(express.urlencoded({
-    extended: true
-}));
-
-app.post('/bar', function(req, res) {
-    var body = req.body;
-    console.log(req.body.foo);
-    res.send(req.body.foo);
-});
+const call = restAPI();
