@@ -1,0 +1,22 @@
+Secure Project
+
+Number can have
+
++ (number)
+or
+00/11/45 (number)
+Or
+(Area) (subscriber) where area -> 1/2 digit 
+0r
+Xx-xx-xx-xx
+0r
+Xxxxx xxxxx 
+
+
+Implement (Secure):
+Unit Test
+Write .env and .config
+Swagger UI
+Regex
+Node.js
+SQLite
