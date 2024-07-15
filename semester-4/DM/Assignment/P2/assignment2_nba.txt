@@ -1,0 +1,115 @@
+#Reference Code
+
+#libraries
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import graphviz
+
+from IPython.display import display
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import cross_val_score
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import LinearSVC
+from sklearn.naive_bayes import GaussianNB
+from sklearn.tree import DecisionTreeClassifier, export_graphviz
+
+
+#load data
+players = pd.read_csv('nba2021.csv',header=0)
+# print(players) #gives good matrix representation
+
+# [(rows): cancer.data -> players.values] 
+# [(features): cancer.feature -> players.columns]
+# [class labels: cancer.target ->  ]
+# print(players.values)
+
+# players_class_labels = players["Pos"]
+# print(players_class_labels.values)
+#convert to numpy array
+# numpy_players = players.to_numpy()
+# print(numpy_players_date.data.shape) # number of rows, number of columns
+# print('Features: ',numpy_players_date) # number of features
+# print(numpy_players[1]) # number of rows, number of columns
+
+
+
+# convert players_class_labels from string to float
+players["Pos"] = pd.factorize(players["Pos"])[0]
+players["Player"] = pd.factorize(players["Player"])[0]
+players["Tm"] = pd.factorize(players["Tm"])[0]
+players_class_labels = players["Pos"]
+# print(players_class_labels.values)
+
+#eliminate column with class labels
+players = players.drop(['Pos'],axis=1)
+# print(players.head())
+player_feature_names = players.columns.values
+print(player_feature_names)
+
+
+
+# print first 3 intances of each class
+# for i in range(0,3):
+#     print(players.values[i], players_class_labels.values[i])
+    
+train_feature, test_feature, train_class, test_class = train_test_split(players.values, players_class_labels, stratify=players_class_labels, random_state=0)
+# print(train_class)
+
+#---------------- Model Predictions Start here -----------------
+
+# ---------- KNN Prediction Ends where accuracy is 0.25 ----------
+knn = KNeighborsClassifier(n_neighbors=1)
+knn.fit(train_feature, train_class)
+# print("Test set Predictions:\n{}".format(knn.predict(test_feature)))
+print("Test set accuracy: {:.2f}".format(knn.score(test_feature, test_class)))
+
+
+#-------plot---------
+# train_accuracy = []
+# test_accuracy = []
+# neighbors_setting = range(1,50)
+
+# for n_neighbors in neighbors_setting:
+#     knn = KNeighborsClassifier(n_neighbors=n_neighbors)
+#     knn.fit(players.values, players_class_labels)
+#     train_accuracy.append(knn.score(train_feature, train_class))
+#     test_accuracy.append(knn.score(test_feature, test_class))
+
+# plt.plot(neighbors_setting, train_accuracy, label="Train Accuracy")
+# plt.plot(neighbors_setting, test_accuracy, label="Test Accuracy")
+# plt.xlabel("Number of Neighbors")
+# plt.ylabel("Accuracy")
+# plt.legend()
+# plt.show()
+#------------Plot ends here-----------------
+    
+
+# ---------- SVM Prediction Ends where accuracy is 0.75 ----------
+LinearSVM = LinearSVC(random_state=0).fit(train_feature, train_class)
+print("Test set Prediciton:\n{}".format(LinearSVM.score(test_feature, test_class)))
+
+
+# ---------- Naive Bayes Prediction Ends where accuracy is 1 ----------
+nb = GaussianNB().fit(train_feature, train_class)
+print("Test set Prediciton:\n{:.3f}".format(nb.score(test_feature, test_class)))
+
+
+# ---------- Decision Tree Prediction Ends where accuracy is 0.75 ----------
+tree = DecisionTreeClassifier(max_depth=4 ,random_state=0)
+tree.fit(train_feature, train_class)
+# print("Training set score: {:.3f}".format(tree.score(train_feature, train_class)))
+print("Test set score: {:.3f}".format(tree.score(test_feature, test_class)))
+
+
+#---------------   Graph   ------------------------------------
+# export_graphviz(tree, out_file="tree.dot", class_names=['SG','PG','SF','PF','C'],
+#                 feature_names=player_feature_names, impurity=False, filled=True)
+# with open("tree.dot") as f:
+#     tree_graph = f.read()
+# display(graphviz.Source(tree_graph))
+
+# Feature Importance
+# print("Feature importances:\n{}".format(tree.feature_importances_))
+

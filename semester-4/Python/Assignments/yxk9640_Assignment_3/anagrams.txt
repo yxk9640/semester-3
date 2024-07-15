@@ -1,0 +1,1 @@
+[('dori my tor', 'dirty room'), ('eleven plus two', 'twelve plus one'), ('the eyes', 'they see'), ('i am a weakish speller', 'william shakespeare'), ('a gentleman', 'elegant man'), ('funeral', 'real fun')]

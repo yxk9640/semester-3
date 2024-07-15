@@ -1,0 +1,7 @@
+prog_id,prog_name,prog_type,description,status,fees,testimony,housing,region,country,language,term,deadline,img1,img2,img3
+1234,AIFS in Buenos Aires,affiliated,,active,,NULL,,Americas,Argentina,English|Spanish,semester/year,NULL,,,
+1235,University of Leicester,Exchange,,active,,NULL,,W. Europe,England,English,semester/year,NULL,,,
+1236,DIS,affiliated,,active,,NULL,,W. Europe,Denmark,English,semester/year,NULL,,,
+1237,UTA Architecture in Berlin,Faculty-Led,,active,,NULL,,W. Europe,Germany,English,Summer,NULL,,,
+1238,UTA Honors in Greece,Faculty-Led,,active,,NULL,,W. Europe,Greece,English,Summer,NULL,,,
+1239,UTA Architecture in Rome,Faculty-Led,,active,,NULL,,W. Europe,Italy,English,Summer,NULL,,,

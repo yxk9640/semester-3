@@ -1,0 +1,134 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{minted}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+\title{CSE 5370: Bioinformatics \\ Homework 1}
+\author{Yogesh Kalapala, yxk9640, 1001879640}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Molecular Biology/Genetics Questions [30 points total]}
+\subsection{Mendelian Genetics}
+ heterozygoyus F1 pea (genotype RrYy) with a homozygous (genotype rryy) pea. 
+
+\def\mca#1{\multicolumn{1}{c}{#1}}
+\def\mcb#1{\multicolumn{1}{c|}{#1}}
+\renewcommand{\arraystretch}{2.25}
+\begin{tabular}{c|c|c|c|c|}
+  \mca{}  & \mca{RY} & \mca{Ry} & \mca{rY} &\mca{ry} \\\cline{2-5}
+  \mcb{ry}   & RrYy    &  Rryy  &rrYy & rryy \\\cline{2-5}
+  \mcb{ry}   & rRyY    & rRyy   & rryY  & ryry \\\cline{2-5}
+  \mcb{ry} &   rRYy  & rRyy   & rrYy & rryy\\\cline{2-5}
+  \mcb{ry} & rRyY    &  rRyy  & rryY & rryy\\\cline{2-5}
+\end{tabular}
+
+\begin{itemize}
+    \item Round Yellow(R,Y) - 4/16=0.25
+    \item Round Green(R,y) - 4/16=0.25 
+    \item Wrinkle Yellow(r,Y) - 4/16=0.25 
+    \item Wrinkle Green(r,y) - 4/16=0.25 
+    
+\end{itemize}
+
+\subsection{Genome Wide Association Studies (GWAS)}
+
+\begin{itemize}
+
+
+\begin{tcolorbox} 
+   The Bonferroni-corrected p-value = ${\displaystyle\frac {original\,p-value}{no\,of\,hypothesis} }$
+\end{tcolorbox}
+\newline
+\item  n is number of hypothesis and it is mentioned that SNP and height association is independent hypothesis we will have 2.6 million hypothesis = ${\displaystyle\frac{0.05}{26000000}}$
+    
+    \newline
+    \newline = 0.000000001923077 
+    \newline
+    \newline = 1.923* 10^-9
+\newline
+\break
+\item  n is number of hypothesis and it is mentioned that metabolites will be only 1000 
+\newline = ${\displaystyle\frac{0.05}{1000}}$ 
+\newline
+\newline = 0.00005 
+\newline
+\newline = 5*10$^-5$
+
+\newline
+
+\break
+
+\item Type –1 error is false positive i.e a test showing a positive result when the disease is not present and Type:II error is showing a negative result even if the disease is present inside. In order to avoid Type: I error bonferroni conservative nature leads to Type II error.
+
+\end{itemize}
+
+\section{Statistics Questions [30 points total]}
+\subsection {Drug Approval}
+
+\begin{itemize}
+    \item Null Hypothesis:
+		When the mean of sample measurement of treated population is same as the mean of sample measurement of the untreated population then the samples are said to have null hypothesis and the drug or the treatment had not effect on the population. For instance, assume in the above scenario if the systolic blood pressure of untreated mice is same as the systolic blood pressure of the treated mice then the drug would have null hypothesis.
+	\item Alternate Hypothesis:
+		When the mean of sample measurement of treated population is less than the mean of sample measurement of the untreated population then the samples are said to have null hypothesis and the drug or the treatment had not effect on the population. In the above scenario the systolic blood pressure of untreated mice is 120mmHg and systolic blood pressure of the treated mice is 115mmHg which is less than the untreated mice which tells us that the drug would has some effect on mice.
+
+    \item 	For the given scenario Z-test is appropriate because we already know the standard deviation which is SD = 15.
+	Sample Mean = 115mmHg
+	Population Mean = 120mmHg
+	Standard Deviation = 15
+	Total population = 20
+	
+		Z = ${\displaystyle \frac{(sample\,mean) - (population\,mean)}{SD} \star \sqrt{n}}$
+		
+		Z = $\frac{(115)-(120)}{SD} \star \sqrt{20}$
+		
+		\newline = -0.33333 \star 20
+		\newline= -1.490711985
+		
+		Z-score is -1.490711985
+		
+	P value is : 0.068112
+	
+		% calculated from https://www.socscistatistics.com/pvalues/normaldistribution.aspx
+
+The p-value for our drug is 0.068112 $>$ 0.05 which tells us that the drug is not significant and cannot be released in the market yet.
+
+
+
+
+    \item  Advantage of choosing Non-parametric tests is they do not need the data to follow a particular distribution and non-parametric tests can be used with small sample sizes. The Real-world data does not fit to neat distribution and would not have a lot of data.
+	
+    \item Parametric tests have good statistical power and the data has to follow a distribution. These factors help to find significant effect.
+
+\end{itemize}
+
+\section{Programming Question [40 points]}
+
+\subsection{}
+
+\begin{itemize}
+ \item 
+ \href{https://colab.research.google.com/drive/126oLyC6VqOoYHRCdmnvoMUFkoeYL4Y73#scrollTo=lrZwiNMw2SRr&uniqifier=2}{Colab }
+ \newline Sumbitted here 
+ prokka files,colab .ipynb files. 
+\end{itemize}
+
+\section{Difficulty Adjustment}
+\begin{itemize}
+    \item How long did this assignment take you to complete? 
+    \item 1 hour for the conceptual part and programming prokka was not working and glimmer was also not working.
+    \item If the assignment took you longer than the designed 3 hours, which parts were overly difficult? 
+    \item Coding part installing the prokka,glimmer and implementing them.
+\end{itemize}
+
+\section{References}
+\begin{itemize}
+\href{https://rjai.me/posts/google-colab-conda/}{How to code in colab}
+\end{itemize}
+
+
+\end{document}
+

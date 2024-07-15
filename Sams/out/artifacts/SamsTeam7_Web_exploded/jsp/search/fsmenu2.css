@@ -1,0 +1,39 @@
+
+#neCaroTabs {
+	PADDING-RIGHT: 0px; FONT-SIZE: 10px; PADDING-LEFT: 0px; PADDING-BOTTOM: 3px; MARGIN: 2px 8px 0px 10px; FONT: bold 10px arial, Verdana, sans-serif; PADDING-TOP: 3px; BORDER-BOTTOM: #ccc 1px solid
+}
+#neCaroTabs LI {
+	DISPLAY: inline; MARGIN: 0px; LIST-STYLE-TYPE: none; FONT-SIZE: 10px;
+}
+#neCaroTabs LI A {
+	BORDER-RIGHT: #ccc 1px solid; FONT-SIZE: 10px; PADDING-RIGHT: 0.5em; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 3px; MARGIN-LEFT: 3px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #ccc 1px; BACKGROUND-COLOR: #f6f7fd; TEXT-DECORATION: none
+}
+#neCaroTabs LI A:link {
+	COLOR: #448
+}
+#neCaroTabs LI A:visited {
+	COLOR: #667
+}
+#neCaroTabs LI A:hover {
+	BORDER-LEFT-COLOR: #666; BACKGROUND-IMAGE: url(.); BORDER-BOTTOM-COLOR: #666; COLOR: #000; BORDER-TOP-COLOR: #666; BACKGROUND-COLOR: #eae7ed; BORDER-RIGHT-COLOR: #666
+}
+
+#neCaroTabs LI  A:active {
+	BACKGROUND: white; BORDER-BOTTOM: white 1px solid
+}
+
+#neCaroTabs LI.active A {
+	BACKGROUND: white; BORDER-BOTTOM: white 1px solid
+}
+#neCarousel {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ccc 0px solid; PADDING-LEFT: 0px; BACKGROUND-IMAGE: url(none); PADDING-BOTTOM: 3px; MARGIN: 0px 0px 0px 10px; OVERFLOW: hidden; BORDER-LEFT: #ccc 1px solid; WIDTH: 450px; PADDING-TOP: 0px; BORDER-BOTTOM: #ccc 1px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #fff
+}
+#neCarousel H3 {
+	DISPLAY: inline; FONT-SIZE: 90%; FLOAT: left; MARGIN: 10px 0px 0px 10px
+}
+#neCarousel .team {
+	CLEAR: both
+}
+
+
+

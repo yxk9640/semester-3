@@ -1,0 +1,84 @@
+Bio 
+
+- [ ] Does the position of nucleotide present in genome should be same always with the position of nucleotide in read.. Ex: AGTCATC is a substring in genome[25:31] then can this string be at read[10:16] or should it be read[25:31] ANSWER: position doesn't matter
+- [ ] What if the position of a nucleotide is at the last of the genome
+
+- [ ] What is “ all nucleotide should be present in read” means 
+    - [ ] Can a sub string does not have one or two nucleotides from “AGTC”. ex: AGGTTAA if this is one of the sub string in genome generated with position genome[7:13] and is present in read[25:31]. Does this hold valid? 
+    - [x] Should AGTC along the sub string position be present in the reads.
+
+such that every nucleotide in the genome from 1 is in a minimum of 4 reads
+
+
+
+also   - What is “ all nucleotide should be present in read” means  - Can a sub string does not have one or two nucleotides from original nucleotide which is “AGTC”.   ex:  genome ATGAAGGTTAAGGTTAAC.  AGGTTAA if this is one of the sub string in genome with position genome[7:13] and is present in read[25:31]. Does this hold valid even though read does not have nucleotide “C”?   PS: array representation array[starting_index : ending_index]
+å
+
+------------- ------------------- ------------------------------- -----------------------------------
+
+
+APPROACH 
+
+
+
+New FINDING
+Check megabit GitHub and prokka GitHub 
+
+
+PROKKA_01242022.tsv
+
+cat PROKKA_01242022.tv | cut -d'  -f3 >> gene_lengths. txt
+
+
+
+
+/Users/yogesh/Documents/Bio-Informatics/Environment_Conda/venv/bin/miniconda3/envs/sratool/bin/fastq-dump.2.11.0 -F --split-files /Users/yogesh/Downloads/SRR12616406
+
+
+!megahit -1 SRR12616406_1.fastq -2 SRR12616406_1.fastq -o assembly —verbose
+
+!prokka-test final.contigs.fa -o annotations
+
+!mamba create -n prokka-test prokka=1.13 minced=0.3.0 parallel=20180522
+
+!prokka-test final.contigs.fa -o annotations
+
+
+
+Install prokka then try this
+!conda install -c bioconda perl-bioperl
+
+
+
+Reinstall -  Feb 3 night
+cmds tried 
+
+- [ ] 
+- [ ] conda install --channel defaults conda python=3.6 --yes —> if conda not installed before
+- [ ] conda update --channel defaults --all --yes  
+- [ ] conda install --channel conda-forge featuretools --yes
+- [ ] conda config --show channels. —> verify if required channels are present
+- [ ] conda create -n sratool sra-tools
+- [ ] conda install -y parallel-fastq-dump
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] conda install -c bioconda megahit
+- [ ] 
+- [ ] 
+- [ ] conda install -c bioconda prokka
+- [ ] 
+- [ ] 
+- [ ] 
+
+---------------------------
+
+ASSIGNMENT - 2
+
+TSK:1
+1. ACGE
+2. Read L = 250 no overlap
+3. Nuclei read = 3 overlap = 7
+4. Nuclei read = 30 overlap = 14
+
+TSK:1

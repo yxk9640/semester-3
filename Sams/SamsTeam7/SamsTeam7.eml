@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component jdk="JavaSE-17" jdk_type="JavaSDK">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<levels>
+		<level name="Apache Tomcat v9.0" value="project"/>
+		<level name="org.eclipse.jst.j2ee.internal.web.container" value="project"/>
+		<level name="org.eclipse.jst.j2ee.internal.module.container" value="project"/>
+	</levels>
+</component>

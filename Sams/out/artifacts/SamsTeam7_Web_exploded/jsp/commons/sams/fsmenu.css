@@ -1,0 +1,683 @@
+/*
+
+Here's the stylesheet rules used to format the menus and their content.
+
+Feel free to alter the menu layout however you want. All you have to do is ensure the script
+has the correct CSS property name (like 'visibility' or 'display') that you want it to change,
+and that your submenus are set as hidden by default.
+
+*/
+
+
+
+/* RULES FOR THE "LISTMENU" OBJECT */
+
+/*
+This uses the 'display' property, so you can remove the positions and run it inline if you want.
+Basically, nested UL tags are offset from their parent LIs using CSS positioning.
+Feel free to experiment with CSS visual effects!
+One good resource for UL/LI formatting: http://www.alistapart.com/articles/taminglists/
+That covers rearranging lists, e.g. for horizontal menus.
+Consult your favourite CSS reference for editing fonts/borders/etc.
+*/
+
+/* For the class="menulist" element, and all 'ul' tags inside it. */
+.menulist, .menulist ul {
+ margin: 0;
+ padding: 0;
+ width: 30%;
+ list-style: none;
+/* border: 1px solid #004898; */
+/* border-bottom-width: 0;*/
+ height:100%;
+ 
+ background: #666666;
+}
+
+/* Submenus ('ul' tags) */
+.menulist ul {
+ position: absolute;
+ top: 0;
+ left: 210px;
+ display: none;
+ background: #999999;
+ border-left: 1px solid #000000;
+ border-top: 1px solid #000000;
+ border-right: 1px solid #000000;
+ border-bottom: 1px solid #000000;
+}
+
+.sublist ul {
+ position: relative;
+ top: 0;
+ left: 280px;
+ display: none;
+ background: #999999;
+ border-left: 1px solid #000000;
+ border-top: 1px solid #000000;
+ border-right: 1px solid #000000;
+ border-bottom: 1px solid #000000;
+} 
+
+.main-menus{
+	font-family: Arial, Helvetica, sans-serif;
+ 	font-size: 8pt;
+}
+/* Submenus text */
+.sublist {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 8pt;
+ font-weight: bold;
+}
+/* All menu items ('li' tags) */
+.menulist li {
+ position: relative;
+ border-bottom: 1px dashed #cccccc;
+
+}
+
+/* Links inside the menu, with 'hover' lightup, and a 'highlighted' class the script applies */
+.menulist a {
+ display: block;
+ position: relative;
+ padding: 4px;
+ color: #ffffff; /* text color before hover */
+ text-decoration: none;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 12pt;
+}
+.menulist a:hover {
+ color: #9DCCFF; /* text color after hover */
+ background-color: #666666;
+
+}
+.menulist a.highlighted {
+ color: #9DCCFF; /* text color after hover out*/
+}
+
+/* This semi-commented section exists to fix bugs in IE/Windows (the 'Holly Hack'). \*/
+* html .menulist li {
+ float: left;
+ height: 1%;
+}
+* html .menulist a {
+ height: 1%;
+}
+/* End Hack */
+
+
+
+
+
+
+/* RULES FOR THE "MENUDIV" OBJECT */
+
+/* This is more complicated CSS, as it will downgrade to NS4 support. */
+
+
+/* An absolutely positioned and hidden DIV (treated as a layer in NS4). */
+.menudiv {
+ position: absolute;
+ visibility: hidden;
+ z-index: 1000;
+ border: 2px outset #FFFFCC;
+ /* Borders:     Top    Right  Bottom    Left   */
+ border-color: #FFFFCC #666633 #666633 #FFFFCC;
+ background-color: #CCCC99; 
+/*  layer-background-color: #CCCC99; */
+ padding: 5px;
+ font: 14px/22px Arial, Helvetica;
+ /* Here's a cool effect, try uncommenting this: */
+ /* filter: alpha(opacity=80); -moz-opacity: 0.8; opacity: 0.8 */
+}
+
+
+/* Formatting to apply to the elements inside the "menudiv" class elements. */
+/* Of course, you can put whatever you want within the menu divs, these are just examples. */
+
+
+
+.menudiv a {
+ display: block;
+ /* I've specified borders for each side individually so NS4 ignores this setting */
+ border-top: 1px solid #CCCC99;
+ border-right: 1px solid #CCCC99;
+ border-bottom: 1px solid #CCCC99;
+ border-left: 1px solid #CCCC99;
+ color: #003333;
+ text-indent: 5px;
+ text-decoration: none;
+}
+
+/* I'm using :hover and :active pseudo-classes for link mouse effects. */
+.menudiv a:hover {
+ border: 1px solid #336699;
+ border-color: #6699CC #003366 #003366 #6699CC;
+ background-color: #336699;
+ color: #FFFFFF;
+}
+.menudiv a:active {
+ border: 1px solid #003366;
+ border-color: #000000 #3366CC #3366CC #000000;
+ background-color: #003366;
+ color: #FFFFFF;
+}
+
+/*
+The script will automatically assign a class of "highlighted" to elements that currently
+have an active submenu, so here's a little CSS to format links within a .menudiv element.
+*/
+.menudiv .highlighted {
+ background-color: #336699;
+ border-color: #336699;
+ color: #FFFFFF;
+}
+
+/* The links in the upper-left that pop out 'divMenu' menus. */
+.trigger a {
+ font: Bold 14px Arial, Helvetica, sans-serif;
+ color: #003366;
+ text-decoration: none;
+}
+
+/* Likewise, style active trigger links */
+.trigger a.highlighted {
+ color: #CC9966;
+}
+
+/* Just a random style, needed for NS4 */
+b, strong {
+ font-weight: bold;
+}
+
+
+
+/* OIE Styles for page body*/
+body {
+	margin-top: 0px;
+	margin-left: 0px;
+	text-align:left;
+    height: 100%;
+/*     background:black; */
+}
+
+
+
+#secondary
+{
+	margin-left: 10px;
+	margin-top: 5px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 11px;
+
+}
+#secondary-table {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 11px;
+	padding-left: 3px;
+}
+/* footer text*/
+
+
+.footer {
+        text-align: center;
+        color: #fff;
+        font-size: 9px;
+        padding: 8px ;
+        position: fixed;
+        bottom:0;
+        width: 100%
+    }
+    
+ .footer-container{
+  position: fixed;
+        bottom:15px;
+        width: 100%
+ }
+    
+.landing-image-container {
+  height: 100vh; 
+}
+
+.container{
+	height: 100vh; 
+	width: 100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.form-control {
+  width:90%;
+}
+
+.landing-button {
+  font-size: 18px;
+  font-weight: bold;
+  text-align:center;
+  background-image: linear-gradient(to bottom, #291f1d, #da983e);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 25vh;
+}
+
+.landing-content-container{
+	display: flex; 
+	align-items: center; 
+	width:100%; 
+	height:100%
+}
+
+
+.navbar{
+	height:20px;
+}
+
+.main-sidebar {
+  position: fixed;
+  top:8%;
+  left: 0;
+  height: 100%;
+  background-color: #ccc;
+  overflow: auto;
+}
+
+
+.left-sidebar a {
+ white-space: inherit !important;
+}
+
+
+
+
+.content {
+  flex: 1;
+  margin-left: 230px; 
+}
+
+.bg-gradient-primary {
+    background-color: #4e73df;
+    background-image: linear-gradient(180deg,#4e73df 10%,#224abe 100%);
+    background-size: cover;
+}
+.sidebar {
+    width: 6.5rem;
+    min-height: 100vh;
+}
+
+@media (min-width: 768px){
+.sidebar {
+    width: 14rem!important;
+}
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+
+
+.sidebar-dark .nav-item.active .nav-link {
+    color: #fff;
+        text-align: left;
+         font-weight: 700;
+}
+
+navbar-nav {
+   display: flex; 
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.accordion {
+    overflow-anchor: none;
+}
+
+.header {
+  justify-items: end;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1; 
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  background-color: #291f1d;
+}
+
+/* css for the content of header */
+.header-content {
+  justify-content: space-between;
+  display: flex;
+}
+
+/* css for the menus wrapper in the header */
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  overflow: hidden; /* Responsive Header Line */
+  
+}
+
+
+.header-menu-item {
+  margin: 1px;
+  padding: 1px;
+  color: var(--color-white);
+
+}
+
+
+.header-menu a {
+  z-index: 0;
+  font-size: 18px;
+  text-align: center;
+  background: #291f1d;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  padding: 1px 12px; 
+  cursor: pointer;
+  /* Responsive Header Line */
+   float:left;
+  display:block; 
+ 
+}
+
+/* custom hover design */
+.header-menu a:hover:before {
+  width: 100%;
+}
+
+.header-menu a.header-menu-item-login:hover {
+  padding: 2px;
+  color: white;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  
+}
+
+/* css for the custom left line in the menu */
+.header-menu a:before {
+  background: #4e73df;
+  height: 100%;
+  content: '';
+  opacity: 0.3;
+  position: absolute;
+  width: 2px;
+  left: 0px;
+  top: 0px;
+  transition: all 0.3s;
+}
+
+
+@media only screen and (max-width:480px) {
+  .header-menu {
+    justify-content: end;
+
+  }
+  .header-menu a {
+    font-size: 11px;
+  }
+  
+  
+}
+
+
+@media only screen and (min-width:481px) {
+  .header-menu {
+    justify-content: end;
+  }
+}
+
+
+@media only screen and (min-width:769px) {
+  .header-menu {
+    justify-content: end;
+    margin-right: 80px;
+  }
+}
+
+
+
+/* ---Responsive Header Nav Items...-----*/
+
+.header-menu a.active {
+	background-color: #04AA6D;
+	color:white;
+	}
+	
+.header-menu .icon{
+	display: none;
+}
+
+
+@media screen and (max-width:992px){
+
+/* Responsive Header Line */
+  .header-menu a:not(:first-child) {display:none;}
+  .header-menu  a.icon{
+  float:right;
+  display: block;
+  }
+ 
+@media screen and (max-width: 992px){
+  .header-menu.responsive {position:relative;}
+  .header-menu.responsive .icon{
+  position: absolute;
+  right: 0;
+  top:0;
+  }
+  .header-menu.responsive a{
+  float:none;
+  display: block;
+  text-align: left;
+  }
+  
+	
+}
+
+
+/*---Responsive Header Nav Items...----- */
+
+
+
+table#navmenu
+{ 
+	text-align: left;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+	color: #ffffff;
+	width: 208px;
+	border-collapse: collapse;
+	margin-left: 3px;
+	margin-top: 6px;
+
+}
+
+table{
+
+width: 100%;
+height: 100%;
+}
+
+table#navmenu td 
+{
+color: #ffffff;
+text-align: left;
+border-bottom: 1px #ffffff dashed;
+padding: 5px;
+}
+
+/* secondary menu links background: #666666;*/
+a.navLink:link {
+	color: #ffffff;
+	
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+a.navLink:visited {
+	color: #cccccc;
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+a.navLink:hover {
+	color: #9DCCFF;
+	font-weight: bold;
+	text-decoration: none;
+	}
+a.navLink:active {
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+	}
+/* Main Links*/
+a.textLink:link {
+	color: #004898;	
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+a.textLink:visited {
+	color: #990000;
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+a.textLink:hover {
+	color: #9DCCFF;
+	font-weight: bold;
+	text-decoration: none;
+	}
+a.textLink:active {
+	color: #004898;
+	font-weight: bold;
+	text-decoration: none;
+	}
+	
+	/* Secondary Links*/
+a.textLink2:link {
+	color: #000000;	
+	/*font-weight: bold;*/
+	text-decoration: none;
+	}
+
+a.textLink2:visited {
+	color: #000000;
+	/*font-weight: bold;*/
+	text-decoration: none;
+	}
+
+a.textLink2:hover {
+	color: #9DCCFF;
+	/*font-weight: bold;*/
+	text-decoration: none;
+	}
+a.textLink2:active {
+	color: #000000;
+	/*font-weight: bold;*/
+	text-decoration: none;
+	}
+	
+/* page footer links */
+a.footer-link:link {
+	color: #ffffff;
+	font-weight:normal;
+	text-decoration: none;
+	}
+
+a.footer-link:visited {
+	color: #ffffff;
+	font-weight: none;
+	text-decoration: none;
+	}
+
+a.footer-link:hover {
+	color: #ffffff;
+	font-weight: none;
+	text-decoration: none;
+	}
+a.footer-link:active {
+	color: #ffffff;
+	font-weight: none;
+	text-decoration: none;
+	}
+	
+.bodytitle {
+	color: #990000;
+	background-color: #eeeeee;
+	font-weight: bold;
+	font-size: 13px;
+
+}
+
+/* Handbook Links*/
+a.textLinkHB:link {
+	color: #004898;	
+	text-decoration: none;
+	}
+
+a.textLinkHB:visited {
+	color: #990000;
+	text-decoration: none;
+	}
+
+a.textLinkHB:hover {
+	color: #9DCCFF;
+	text-decoration: none;
+	}
+a.textLinkHB:active {
+	color: #004898;
+	text-decoration: none;
+	}
+
+	/* For Announcements */
+a.news:link {
+	color: #FFFF33;	
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+a.news:visited {
+	color: #FFFF33;
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+a.news:hover {
+	color: #FFCC00;
+	font-weight: bold;
+	text-decoration: none;
+	}
+a.news:active {
+	color: #FFFF33;
+	font-weight: bold;
+	text-decoration: none;
+	}
+	
+	.heading{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#004898;
+	font-size:14px;
+	font-weight:bold;
+	}
+}
+	
+	
+	
+	/* .buttonclass{
+	   bgcolor:#0066FF;
+	} */

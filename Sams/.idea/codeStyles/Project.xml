@@ -1,0 +1,7 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <JspCodeStyleSettings>
+      <option name="JSP_PREFER_COMMA_SEPARATED_IMPORT_LIST" value="true" />
+    </JspCodeStyleSettings>
+  </code_scheme>
+</component>

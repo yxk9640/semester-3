@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Pos <= 0.5\nsamples = 372\nvalue = [78, 72, 67, 91, 64]\nclass = PF", fillcolor="#f6f6fe"] ;
+1 [label="samples = 78\nvalue = [78, 0, 0, 0, 0]\nclass = SG", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Pos <= 2.5\nsamples = 294\nvalue = [0, 72, 67, 91, 64]\nclass = PF", fillcolor="#eeeefd"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="Pos <= 1.5\nsamples = 139\nvalue = [0, 72, 67, 0, 0]\nclass = PG", fillcolor="#f6fdf1"] ;
+2 -> 3 ;
+4 [label="samples = 72\nvalue = [0, 72, 0, 0, 0]\nclass = PG", fillcolor="#7be539"] ;
+3 -> 4 ;
+5 [label="samples = 67\nvalue = [0, 0, 67, 0, 0]\nclass = SF", fillcolor="#39e5c5"] ;
+3 -> 5 ;
+6 [label="Pos <= 3.5\nsamples = 155\nvalue = [0, 0, 0, 91, 64]\nclass = PF", fillcolor="#c5c4f7"] ;
+2 -> 6 ;
+7 [label="samples = 91\nvalue = [0, 0, 0, 91, 0]\nclass = PF", fillcolor="#3c39e5"] ;
+6 -> 7 ;
+8 [label="samples = 64\nvalue = [0, 0, 0, 0, 64]\nclass = C", fillcolor="#e539c0"] ;
+6 -> 8 ;
+}

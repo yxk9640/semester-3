@@ -1,0 +1,178 @@
+No: 1 7 
+one: 1 10 
+is: 1 6 
+unaware: 1 
+of: 1 2 3 4 6 9 10 
+the: 1 3 4 6 9 10 
+name: 1 
+that: 1 
+famous: 1 
+English: 1 
+shipowner,: 1 
+Cunard.: 1 
+In: 8 2 4 
+1840: 2 
+this: 2 10 5 6 
+shrewd: 2 6 
+industrialist: 2 
+founded: 2 
+a: 8 9 2 
+postal: 2 
+service: 2 
+between: 2 
+Liverpool: 2 
+and: 2 3 4 5 
+Halifax,: 2 
+featuring: 2 
+three: 2 
+wooden: 2 
+ships: 8 2 3 4 
+with: 2 5 7 
+400-horsepower: 2 
+paddle: 2 5 
+wheels: 2 5 
+burden: 2 
+1,162: 2 
+metric: 2 3 
+tons.: 2 
+Eight: 3 
+years: 8 3 
+later,: 3 
+company's: 3 
+assets: 3 4 
+were: 3 
+increased: 3 
+by: 10 3 
+four: 3 5 
+650-horsepower: 3 
+at: 10 3 
+1,820: 3 
+tons,: 3 
+in: 9 3 5 
+two: 3 
+more: 3 7 
+years,: 3 
+other: 3 
+vessels: 3 
+still: 9 3 
+greater: 3 7 
+power: 3 
+tonnage.: 3 
+1853: 4 
+Cunard: 8 9 4 
+Co.,: 4 
+whose: 4 
+mail-carrying: 4 
+charter: 4 
+had: 4 
+just: 4 
+been: 4 7 
+renewed,: 4 
+successively: 4 
+added: 4 
+to: 9 4 
+its: 10 4 6 
+Arabia,: 4 
+Persia,: 4 
+China,: 4 
+Scotia,: 4 
+Java,: 4 
+Russia,: 4 
+all: 9 4 
+top: 4 
+speed: 4 
+and,: 4 
+after: 4 
+Great: 4 
+Eastern,: 4 
+biggest: 4 
+ever: 4 
+plow: 4 
+seas.: 4 
+So: 5 
+1867: 5 
+company: 5 
+owned: 5 
+twelve: 5 
+ships,: 5 
+eight: 5 
+propellers.: 5 
+If: 6 
+I: 6 
+give: 6 
+these: 6 
+highly: 6 
+condensed: 6 
+details,: 6 
+it: 6 
+so: 8 6 
+everyone: 6 
+can: 9 6 
+fully: 6 
+understand: 6 
+importance: 6 
+maritime: 6 
+transportation: 6 
+company,: 6 
+known: 6 
+world: 6 
+over: 6 
+for: 6 
+management.: 6 
+transoceanic: 7 
+navigational: 7 
+undertaking: 7 
+has: 7 
+conducted: 7 
+ability,: 7 
+no: 10 7 
+business: 7 
+dealings: 7 
+have: 8 7 
+crowned: 7 
+success.: 7 
+twenty-six: 8 
+made: 8 
+2,000: 8 
+Atlantic: 8 
+crossings: 8 
+without: 8 
+much: 8 
+as: 8 9 
+voyage: 8 
+canceled,: 8 
+delay: 8 
+recorded,: 8 
+man,: 8 
+craft,: 8 
+or: 8 
+even: 8 
+letter: 8 
+lost.: 8 
+Accordingly,: 9 
+despite: 9 
+strong: 9 
+competition: 9 
+from: 9 
+France,: 9 
+passengers: 9 
+choose: 9 
+line: 9 
+preference: 9 
+others,: 9 
+be: 9 10 
+seen: 9 
+recent: 9 
+survey: 9 
+official: 9 
+documents.: 9 
+Given: 10 
+this,: 10 
+will: 10 
+astonished: 10 
+uproar: 10 
+provoked: 10 
+accident: 10 
+involving: 10 
+finest: 10 
+steamers.: 10 
